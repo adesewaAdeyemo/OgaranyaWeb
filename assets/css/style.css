@@ -73,6 +73,11 @@ nav a.btn:hover, .header-text-btn:hover{
 .navbar-brand img{
     width: 225.69px;
 }
+.navbar-toggler{
+    position: absolute !important;
+    right: 0 !important;
+    top: 30px;
+}
 /* .active{
     border-bottom: 3px red solid !important;
     width: 10px;
