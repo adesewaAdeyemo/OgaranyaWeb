@@ -3,6 +3,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+.row{
+    padding: 0px !important;
+    margin: 0px !important;
+}
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -309,10 +313,11 @@ nav a.btn{
 
 /* developer */
 .dev-flex-text{
-    padding:20px 0!important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 .dev-flex{
-    max-width: 100%;
+    width: 100%;
 }
 .second.row.dev-flex{
     flex-direction: column-reverse !important;   
