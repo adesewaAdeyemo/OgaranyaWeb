@@ -258,6 +258,9 @@ img.foot-icon{
     height: 30px;
     /* padding: 10px; */
 }
+.close{
+    display: none;
+}
 /* medium screen */
 @media screen and (min-width: 1400px) {
 .bill, .nav a.btn{
@@ -292,6 +295,7 @@ h2{
 }
 /* header */
 h1.header-text{
+    padding-top: 50px;
     font-size: 36px;
     font-weight: 700;
 }

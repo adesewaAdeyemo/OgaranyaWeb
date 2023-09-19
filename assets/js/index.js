@@ -31,4 +31,16 @@ function showflexdetail(formId) {
     clickedbtn.classList.add("custom-btn-bg");
   }
 }
-
+const collapse = document.getElementById("navbarText");
+const togglebtn = document.getElementById("open");
+const togleclose = document.getElementById("close");
+togglebtn.addEventListener("click", () => {
+  togglebtn.style.display = "none";
+  togleclose.style.display = "block";
+  collapse.style.display = "block";
+});
+togleclose.addEventListener("click", () => {
+  togleclose.style.display = "none";
+  togglebtn.style.display = "block";
+  collapse.style.display = "none";
+});
