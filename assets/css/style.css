@@ -77,7 +77,7 @@ nav a.btn:hover, .header-text-btn:hover{
     text-align: center;
 }
 .navbar-brand img{
-    width: 225.69px;
+    width: 225.69px !important;
 }
 .navbar-toggler{
     position: absolute !important;
@@ -302,7 +302,7 @@ nav a.btn{
     min-width: 200px;
 }
 .navbar-brand img{
-    width: 150px;
+    width: 150px !important;
 }
 
 /* bussiness-individual */
