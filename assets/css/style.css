@@ -51,7 +51,7 @@ nav a.btn{
     color: #273765 !important;
     border-radius: 8px;
     font-size: 16px;
-
+   white-space: nowrap !important; 
 }
 nav a.btn:hover, .header-text-btn:hover{
     background-color: transparent !important;
