@@ -4,8 +4,10 @@
     margin: 0;
 }
 .row{
-    padding: 0px !important;
-    margin: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 body{
     font-family: 'Inter', sans-serif;
