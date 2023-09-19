@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+    <!-- bootsrap icon -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <body>
+    <div class="nav-bg">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg pt-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/img/OgaLogo3.png" alt=""></a>
+                </div>
+                <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon">&#9776</span>
+                </span>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">       
+                    </ul>
+                    <span class="navbar-text">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Integration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bill" href="#">Bill reciept</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Documentation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 20px;">
+                                <a class="btn btn-lg" href="#">Get started</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <header class="header-hero">
+        <div class="wrapper">
+            <h1 class="header-text">Making Online-To-Offline (O2O)<br>  commerce seamless </h1>
+            <p class="header-text-p">Unlocking boundless payment opportunities for enterprises, individuals,<br> small businesses, emerging markets, and startups alike.</p>
+            <a class="header-text-btn btn btn-lg" href="#">Get started</a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="about-us-video"><iframe title="YouTube video player" src="https://www.youtube.com/embed/hFjsTSixud8" frameborder="0" width="100%" height="515"></iframe></div>
+    </div>
+    <div class="wrapper">
+        <section class="bussiness-individual">
+            <div class="row">
+                <h6>Business - Individual</h6>
+            </div>
+            <div class="row py-3">
+                <div class="col">
+                    <h2>Large business,Small<br> business Use Ogaranya to<br> grow their business.</h2>
+                </div>
+                <div class="col space-right">
+                    <p>Why complicate things with registrations, passwords, and app downloads? With our platform, you can dive straight into the action. No need to sign up—just connect with your preferred text-based messaging service and explore a world of opportunities.</p>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col what-we-do">
+                    <div class="">
+                        <span onclick="showdetail('invoicedetail')" class="showdetail col-12"><h5><span class="custom-color">01. </span> Invoicing</h5></span>
+                        <hr>
+                        <div id="invoicedetail" class="detail">
+                            <p>Our SMS Invoicing service (OgaPay) helps merchants deliver invoice to a customer through SMS; and allows the customer to pay for the invoice using the USSD code of their bank. The merchant is notified of all payments instantly. </p>
+                            <br>
+                            <p>This service can also be used to pay for in-shop purchases as a complement to POS service.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span onclick="showdetail('billdetail')" class="showdetail col-12"><h5><span class="custom-color">02. </span> Bills Payment</h5></span>
+                        <hr>
+                        <div id="billdetail" class="detail">
+                            <p>This is bills payment service for our agents and general users. They can pay for almost all bills (Electric Power, Cable TV, Toll Gate, Airtime vending and many more) through our many channels. </p>
+                            <br>
+                            <p>We have agents who uses our application to vend for people.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span onclick="showdetail('activationdetail')" class="showdetail col-12"><h5><span class="custom-color">03. </span> Customer Activation</h5></span>
+                        <hr>
+                        <div id="activationdetail" class="detail">
+                            <p>Businesses publicise every day to get the message of their companies out to those who need their services. It is always difficult to measure how these advertorials are doing.</p>
+                            <br>
+                            <p>Our subscription service will not only help businesses measure the reach of their publicity medium/materials but it will also allow them to have the contact of potential customers that are interested in their product and services.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span onclick="showdetail('verificationdetail')" class="showdetail col-12"><h5><span class="custom-color">04. </span> Phone Number Verification</h5></span>
+                        <hr>
+                        <div id="verificationdetail" class="detail">
+                            <p>Our Phone Number Verification service helps businesses to verify that a phone number is active. We believe our approach is a better alternative to sending OTP to users phone numbers. </p>
+                            <br>
+                            <p>Our approach is to have your users send a pre-setup token to a dedicated number, after which we will send to your server all the information of the user who sent this token to our server for validation. This saves you the rigour of wasting your SMS units by sending to a vicious user who is just trying to test your application. Our approach will also cut off users who would not get your OTP due to DND (Do-Not-Disturb) restrictions.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span onclick="showdetail('customdetail')" class="showdetail col-12"><h5><span class="custom-color">05. </span> Custom Command Services</h5></span>
+                        <div id="customdetail" class="detail">
+                            <p>Businesses publicise every day to get the message of their companies out to those who need their services. It is always difficult to measure how these advertorials are doing.</p>
+                            <br>
+                            <p>Our subscription service will not only help businesses measure the reach of their publicity medium/materials but it will also allow them to have the contact of potential customers that are interested in their product and services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col space-right">
+                    <div id="invoicedetailImg" class="detail">
+                        <img src="assets/img/Group 43467.png" alt="" height="750" class="col-12">
+                    </div>
+                    <div id="billdetailImg" class="detail">
+                        <img src="assets/img/Group 43466.png" alt="" height="750" class="col-12">
+                    </div>
+                    <div id="activationdetailImg" class="detail">
+                        <img src="assets/img/Group 43467.png" alt="" height="750" class="col-12">
+                    </div>
+                    <div id="verificationdetailImg" class="detail">
+                        <img src="assets/img/Group 43466.png" alt="" height="750" class="col-12">
+                    </div>
+                    <div id="customdetailImg" class="detail">
+                        <img src="assets/img/Mask group.png" alt="" height="750" class="col-12">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <div class="wrapper">
+        <div class="use">
+            <div class="use-text">
+                <h2>Use Ogaranya For</h2>
+                <p>Below is the list of things you could do with our value added product</p>
+            </div>
+            <div class="row">
+                <div class="btn btn-lg spanbtn col" id="buybtn" href="#" onclick="showflexdetail('buy')">BUY</div>
+                <div class="btn btn-lg spanbtn col" id="bookbtn" href="#" onclick="showflexdetail('book')">BOOK</div>
+                <div class="btn btn-lg spanbtn col" id="givebtn" href="#" onclick="showflexdetail('give')">GIVE</div>
+                <div class="btn btn-lg spanbtn col" id="bookinvoicebtn" href="#" onclick="showflexdetail('invoice')">INVOICE</div>
+                <div class="btn btn-lg spanbtn col" id="subscribebtn" href="#" onclick="showflexdetail('subscribe')">SUBSCRIPTION</div>
+                <div class="btn btn-lg spanbtn col" id="rewardbtn" href="#" onclick="showflexdetail('reward')">REWARD</div>
+                <div class="btn btn-lg spanbtn col" id="campaignbtn" href="#" onclick="showflexdetail('campaign')">CAMPAIGN</div>
+                <div class="btn btn-lg spanbtn col" btn="2mwbtn" href="#" onclick="showflexdetail('2mw')">2MW</div>
+            </div>
+            <div class="usedetail" id="buy">
+                <div class="row py-5 d-flex align-items-center">
+                    <div class="col col-md-8 col-sm-12 card">
+                        <h6>Buy</h6>
+                        <p>Text "Buy 101010" to 08107600076 to buy a demo product.</p>
+                        <a class="use-text-btn btn btn-lg col-md-4 c0l-sm-12" href="#">Get started <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></a>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <img src="assets/img/webpost.jpg.png" class="col-12" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="usedetail" id="book">
+                <div class="usedetail row py-5 d-flex align-items-center">
+                    <div class="col col-md-8 col-sm-12 card">
+                        <h6>Book</h6>
+                        <p>Text "Book 101010" to 08107600076 to book an event.</p>
+                        <a class="use-text-btn btn btn-lg col-md-4 c0l-sm-12" href="#">Get started <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></a>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <img src="assets/img/Picture 1.png" class="col-12" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="usedetail" id="give">
+                <div class="usedetail row py-5 d-flex align-items-center">
+                    <div class="col col-md-8 col-sm-12 card">
+                        <h6>Give</h6>
+                        <p>Text "Give 101010" to 08107600076 to give a daonation.</p>
+                        <a class="use-text-btn btn btn-lg col-md-4 c0l-sm-12" href="#">Get started <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></a>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <img src="assets/img/Phone-Landing.png" class="col-12" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="developer">
+        <div class="wrapper">
+            <div class="row">
+                <h6 class="p-0">Developers</h6>
+            </div>
+            <div class="row dev-flex">
+                <div class="col p-0">
+                    <h2>Built for developers, by developers</h2>
+                    <p>Why complicate things with registrations, passwords, and app downloads? With our platform, you can dive straight into the action. No need to sign up—just connect with your preferred text-based messaging service and explore a world of opportunities.</p>
+                </div>
+            </div>
+            <div class="row dev-flex">
+                <div class="col dev-frame p-0">
+                    <img src="assets/img/image 1.png" alt="" height="450" class="col-12">
+                </div>
+                <div class="col dev-flex-text">
+                    <h2>Powerful, flexible API + Webhooks</h2>
+                    <p>A full REST API that has predictable URLs and valid responses, uses standard codes, authentication, and verbs. Plus webhooks for asynchronous events. Voilà.</p>
+                    <a class="header-text-btn btn btn-lg mt-5" href="#">Explore the API <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></a>
+                </div>
+            </div>
+            <div class="second row dev-flex">
+                <div class="col  p-0">
+                    <h2>Documentation so good you’ll cry</h2>
+                    <p>We invest our time into fully abstracting our API so your team can focus on building a cohesive system. Integrate with Ogaraya in minutes, not months.</p>
+                    <a class="header-text-btn btn btn-lg mt-5" href="#">Explore the API <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></a>
+                </div>
+                <div class="col dev-flex-text">
+                    <div class="dev-frame">
+                    <pre>
+                    <code>       
+
+    { 
+
+        "status" : "success",
+
+        "data" : { 
+
+            "order_id" : "8864905934", "order_reference":   
+
+            "8864905934", "message": "To complete this    
+
+            transaction, Text ORDER 5549397032 to  
+
+            08011223344", 
+
+            "msisdn_to_send_to" : "08011223344" 
+
+        }
+    }
+                    </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="channel">
+        <div class="wrapper channel-wrapper">
+            <div class="channel-wrapper">
+                <div class="text-center p-4">
+                    <h6>Sales Channels</h6>
+                    <h2>Make O2O commerce channel easy</h2>
+                    <p>Your customers can buy from our different sales channels.</p>
+                </div>
+                <div class="row row-cols-7 pt-4">
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/vector.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/slack.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/intercom.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/jira.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/dropbox.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/stripe.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/zapier.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/figma.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/confluence.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/zendesk.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/g-calendar.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/whatsapp.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/discord.png" alt="">
+                    </div>
+                    <div class="btn btn-lg col channel-icon">
+                        <img src="assets/img/bitbucket.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper customer text-center">
+        <h6>Customers Stories</h6>
+        <div class="change-story">
+            <h2>Ogaraya is absolutely fantastic. Setting up took less than 45 mins. Extremely easy </h2>
+            <div class="story-teller py-4">
+                <img src="assets/img/Avatar(1).png" alt="">
+                <h5>Layon Pan</h5>
+                <p>CTO, Sharply Africa</p>
+            </div>
+            <div class="d-flex justify-content-between customer-wrapper">
+                <div class="col-2">
+                    <img src="assets/img/Link → kano1.jpg.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="assets/img/neolife.svg" alt="">
+                </div>
+                <div class="col-4">
+                    <img src="assets/img/Link → FIBER-ONE-SIZE.jpg.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/img/Link → kano-state.jpg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="row footer">
+            <div class="col col-md-4 col-sm-12">
+                <img src="assets/img/Item → Link → OgaLogo3.png.png" width="300" alt="" class="mb-4 mt-0 pt-0">
+                <p>Unlocking boundless payment opportunities for enterprises, individuals, small businesses, emerging markets, and startups alike.</p>
+            </div>
+            <div class="col col-md-2 col-sm-12">
+                <h6>Product</h6>
+                <ul>
+                    <li>Invoicing</li>
+                    <li>Bill Payment</li>
+                    <li>Subscription</li>
+                    <li>Sales channel</li>
+                </ul>
+            </div>
+            <div class="col col-md-2 col-sm-12">
+                <h6>Companies</h6>
+                <ul>
+                    <li>Bills receipt</li>
+                    <li>Contact</li>
+                    <li>Documentation</li>
+                    <li>Integration</li>
+                </ul>
+            </div>
+            <div class="col col-md-2 col-sm-12">
+                <h6>Social</h6>
+                <ul>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+            <div class="col col-md-2 col-sm-12">
+                <h6>Legal</h6>
+                <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Acceptable Channel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="d-flex justify-content-between align-items-center py-5">
+                <div class="">
+                    <p>© 2023 Ogaraya. All rights reserved.</p>
+                </div>
+                <div class="d-flex">
+                    <img src="assets/img/Vector(1).png" class="foot-icon mx-2" alt="">
+                    <img src="assets/img/Vector(2).png" class="foot-icon mx-2" alt="">
+                    <img src="assets/img/Vector(3).png" class="foot-icon" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
