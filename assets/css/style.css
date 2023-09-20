@@ -78,6 +78,7 @@ nav a.btn{
     border-radius: 8px;
     font-size: 16px;
     margin-left: 20px;
+    white-space: nowrap;
 }
 nav a.btn:hover, .header-text-btn:hover{
     background-color: transparent !important;
@@ -344,20 +345,24 @@ h2{
 /* nav */
 .navbar-brand img{
     width: 150px !important;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .navbar{
     position: absolute !important;
     padding: 0% !important;
-    min-width: 100%;
-    margin-left: -20px;
     
 }
 .navbar-nav{
     align-items:flex-start;
     text-align: left !important;
-    padding-left: 20px !important;
+    padding: 20px !important;
     background-color: #fff;
+    border-radius: 8px !important;
+}
+#navbarText{
+    width: 53.1vh;
+    margin-left: -20px;
+
 }
 .navbar-toggler{
     position: absolute;
