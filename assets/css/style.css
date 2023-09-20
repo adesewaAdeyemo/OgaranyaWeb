@@ -43,7 +43,7 @@ h6{
 }
 
 /* nav */
- .navbar-toggler{
+.navbar-toggler{
     position: absolute;
     top: 10px;
     right: 30px !important;
@@ -59,7 +59,10 @@ h6{
 }
 .navbar-nav{
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
+}
+nav a, .header ul li{
+    color: #fff !important;
 }
 .navbar-brand img{
     width: 225.69px !important;
@@ -69,6 +72,20 @@ h6{
     right: 0 !important;
     top: 30px;
 }
+nav a.btn{
+    background-color: #fff;
+    color: #273765 !important;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+nav a.btn:hover, .header-text-btn:hover{
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+
+}
+
 /* .active{
     border-bottom: 3px red solid !important;
     width: 10px;
@@ -87,7 +104,7 @@ header, .nav-bg{
 }
 
 h1.header-text{
-    padding-top: 70px;
+    padding-top: 150px;
     font-size: 62px;
     font-weight: 700;
 }
@@ -298,6 +315,9 @@ img.foot-icon{
 }
 }
 @media screen and (max-width: 1200px) {
+.bill, .nav a.btn{
+   white-space: nowrap !important; 
+}
 .wrapper{
     margin: 0 auto !important;
     max-width: 80%;
@@ -320,9 +340,52 @@ img.foot-icon{
 h2{
     font-size: 32px !important;
 }
+
+/* nav */
+.navbar-brand img{
+    width: 150px !important;
+    margin-left: 20px;
+}
+.navbar{
+    position: absolute !important;
+    padding: 0% !important;
+    min-width: 100%;
+    margin-left: -20px;
+    
+}
+.navbar-nav{
+    align-items:flex-start;
+    text-align: left !important;
+    padding-left: 20px !important;
+    background-color: #fff;
+}
+.navbar-toggler{
+    position: absolute;
+    top: 20px;
+    left: 360px !important;
+}
+nav a, .header ul li{
+    color: #273765 !important;
+}
+nav a.btn{
+    min-width: 200%;
+    margin-left: 0;
+    background-color: #F43722;
+    color: #fff !important;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+nav a.btn:hover, .header-text-btn:hover{
+    background-color: transparent !important;
+    color: #273765 !important;
+    border: 1px solid #273765 !important;
+}
+
+
 /* header */
 h1.header-text{
-    padding-top: 70px;
+    padding-top: 130px;
     font-size: 36px;
     font-weight: 700;
 }
@@ -337,33 +400,7 @@ h1.header-text{
 .about-us-video iframe{
     height: 230px !important;
 }
-nav a, .header ul li{
-    color: #273765 !important;
-}
-nav a.btn{
-    background-color: #F43722;
-    color: #fff !important;
-    border-radius: 8px;
-    font-size: 14px;
-}
-nav a.btn:hover, .header-text-btn:hover{
-    background-color: transparent !important;
-    color: #273765 !important;
-    border: 1px solid #273765 !important;
-}
 
-
-
-/* nav */
-nav a.btn{
-    min-width: 200px;
-}
-.navbar-brand img{
-    width: 150px !important;
-}
-.collapse.navbar-collaps{
-    position: absolute !important;
-}
 
 /* bussiness-individual */
 .bussiness-individual{
