@@ -214,6 +214,9 @@ iframe{
     background-color: #262E35;
     height: 450px;
 }
+.dev-frame img{
+    height: 450px;
+}
 
 /* channels */
 .channel{
@@ -252,6 +255,7 @@ iframe{
 .footer ul{
     padding: 0 !important;
 }
+
 /* div.footer */
 .footer ul li{
     font-size: 16px;
@@ -278,6 +282,7 @@ iframe{
     border-radius: 10px;
     font-size: 12px;
 }
+
 /* footer */
 footer{
     background-color: #F9FAFB;
@@ -285,7 +290,6 @@ footer{
 img.foot-icon{
     width: 30px;
     height: 30px;
-    /* padding: 10px; */
 }
 .footer-note{
     padding: 40px 0;
@@ -374,7 +378,7 @@ p{
 }
 nav a.btn{
     min-width: 320px !important;
-    margin: 10px 0 0 0;
+    margin: 20px 0 10px 0;
 }
 .navbar-brand img{
     width: 150px !important;
@@ -412,7 +416,7 @@ nav a.btn:hover, .header-text-btn:hover{
 
 /* header */
 h1.header-text{
-    padding-top: 100px;
+    padding-top: 70px;
     font-size: 36px;
     font-weight: 700;
 }
@@ -457,9 +461,14 @@ h1.header-text{
 .second.row.dev-flex{
     flex-direction: column-reverse !important;   
 }
-.pre{
-    font-size: 10px !important;
+.dev-frame{
+    overflow: scroll;
+    height: 400px;
 }
+.dev-frame img{
+    height: 400px;
+}
+
 .dev-flex-text a, .dev-flex a{
     margin-top: 0 !important;
 }
@@ -468,6 +477,7 @@ h1.header-text{
 }
 /* customer */
 .customer{
+    border-radius: 20px;
     padding: 40px;
     margin-top: -250px !important;
 }
@@ -535,5 +545,65 @@ img.foot-icon{
 /* .dialog h4{
     font-size: ;
 } */
+
+}
+
+@media screen and (max-width: 400px) {
+h1.header-text{
+    font-size: 30px !important;
+}
+h5{
+    font-size: 16px !important;
+}
+h6{
+    font-size: 15px;
+}
+p{
+    font-size: 14px;
+    line-height: 22px !important;
+}
+h2{
+    font-size: 22px !important;
+    line-height: 32px !important;
+}
+ul li, a{
+    font-size: 14px;
+}
+
+/* header */
+.header-text-p{
+    padding: 10px 20px;
+    line-height: 24px !important;
+}
+.header-hero{
+    padding-bottom: 8rem;
+}
+header p, .header-text-btn{
+    font-size: 15px !important;
+}
+
+
+/* video */
+.about-us-video{
+    margin-top: -5rem;
+}
+.about-us-video iframe{
+    height: 190px !important;
+}
+
+/* developer */
+.dev-frame{
+    overflow: scroll;
+    max-height: 300px !important;
+}
+.dev-frame img{
+    height: 300px !important;
+}
+
+/* customer */
+.customer{
+    border-radius: 8px;
+    padding: 20px;
+}
 
 }
