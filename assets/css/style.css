@@ -154,6 +154,10 @@ iframe{
     border: 1px solid #273765 !important;
     margin: 1%;
 }
+.detail-text h5{
+    color: #121316;
+    font-weight: 600;
+}
 .spanbtn:hover{
     background-color:#273765 !important;
     color: #fff !important;
@@ -163,9 +167,10 @@ iframe{
     text-align: center;
 }
 .use-text-btn{
-    background-color: rgba(235, 67, 67, 0.4) !important;
-    color: #F43722 !important;
+    background-color: rgba(250, 149, 149, 0.4) !important;
+    color: #fc1e06 !important;
     border-radius: 8px;
+    width: 40%;
 }
 .card{
     border: none !important;
@@ -260,6 +265,18 @@ iframe{
     line-height: 32px !important;
     font-weight: 100;
 }
+.footer img{
+    width: 250px;
+}
+.footer h6{
+    padding: 0;
+}
+.new{
+    color: rgb(2, 80, 54);
+    background-color: rgba(183, 248, 227, 0.5);
+    border-radius: 10px;
+    font-size: 12px;
+}
 footer{
     background-color: #F9FAFB;
 }
@@ -268,6 +285,7 @@ img.foot-icon{
     height: 30px;
     /* padding: 10px; */
 }
+
 .close{
     display: none;
 }
@@ -336,9 +354,11 @@ img.foot-icon{
     width: 95% !important;
 }
 h2{
-    font-size: 32px !important;
+    font-size: 30px !important;
 }
-
+p{
+    font-size: 16px;
+}
 /* nav */
 .navwrapper{
     max-width: 100% !important;
@@ -409,6 +429,14 @@ h1.header-text{
     flex-direction: column !important;
 }
 
+/* use */
+.spanbtn, .use-text-btn{
+    font-size: 12px !important;
+}
+.use-text-btn{
+    width: 50%;
+}
+
 /* developer */
 .dev-flex-text{
     padding: 0 !important;
@@ -440,6 +468,38 @@ h1.header-text{
 .channel-wrapper, .customer-wrapper{
     width: 100%;
 }
+.channel-row{
+    overflow-x: scroll;
+    
+}
+.height{
+    min-height: 70px !important;
+}
+
+/* footer */
+.footer{
+    padding: 70px 0 !important;
+}
+.footer img{
+    width: 220px;
+}
+.footer ul li{
+    font-size: 14px;
+    line-height: 30px !important;
+}
+.footer h6{
+    padding-top: 20px;
+}
+
+.footer p{
+    font-size: 16px;
+    line-height: 24px !important;
+}
+img.foot-icon{
+    width: 20px;
+    height: 20px;
+}
+
 
 /* close */
 .pop-close{
