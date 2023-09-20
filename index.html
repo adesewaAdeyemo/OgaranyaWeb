@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pricing.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -14,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
     <!-- bootsrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- nav -->
@@ -22,7 +24,7 @@
         <div class="navwrapper">
             <nav class="navbar navbar-expand-lg pt-4">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand p-0" href="#"><img src="assets/img/OgaLogo3.png" alt=""></a>
+                    <a class="navbar-brand p-0" href="/"><img src="assets/img/OgaLogo3.png" alt=""></a>
                 </div>
                 <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon m-0 p-0" id="open">&#9776</span>
@@ -34,7 +36,7 @@
                     <span class="navbar-text">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="pricing.html">Pricing</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Integration</a>
@@ -49,7 +51,7 @@
                                 <a class="nav-link" href="#">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-lg" href="#">Get started</a>
+                                <a class="togglestartform btn btn-lg" href="#">Get started</a>
                             </li>
                         </ul>
                     </span>
@@ -62,7 +64,7 @@
         <div class="wrapper">
             <h1 class="header-text">Making Online-To-Offline (O2O)<br>  commerce seamless </h1>
             <p class="header-text-p">Unlocking boundless payment opportunities for enterprises, individuals,<br> small businesses, emerging markets, and startups alike.</p>
-            <a class="header-text-btn btn btn-lg" href="#">Get started</a>
+            <a class="togglestartform header-text-btn btn btn-lg" href="#">Get started</a>
         </div>
     </header>
     <!-- about-us-video -->
@@ -132,19 +134,19 @@
                 </div>
                 <div class="col space-right">
                     <div id="invoicedetailImg" class="detail">
-                        <img src="assets/img/Group 43467.png" alt="" height="700" class="col-12">
+                        <img src="assets/img/Group 43467.png" alt="" height="700" class="col-12" loading="lazy">
                     </div>
                     <div id="billdetailImg" class="detail">
-                        <img src="assets/img/Group 43466.png" alt="" height="700" class="col-12">
+                        <img src="assets/img/Group 43466.png" alt="" height="700" class="col-12" loading="lazy">
                     </div>
                     <div id="activationdetailImg" class="detail">
-                        <img src="assets/img/Group 43467.png" alt="" height="700" class="col-12">
+                        <img src="assets/img/Group 43467.png" alt="" height="700" class="col-12" loading="lazy">
                     </div>
                     <div id="verificationdetailImg" class="detail">
-                        <img src="assets/img/Group 43466.png" alt="" height="700" class="col-12">
+                        <img src="assets/img/Group 43466.png" alt="" height="700" class="col-12" loading="lazy">
                     </div>
                     <div id="customdetailImg" class="detail">
-                        <img src="assets/img/launchapp.jpg.png" alt="" height="700" class="col-12">
+                        <img src="assets/img/launchapp.jpg.png" alt="" height="700" class="col-12" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -244,7 +246,7 @@
                 <div class="col dev">
                     <h2>Documentation so good you’ll cry</h2>
                     <p>We invest our time into fully abstracting our API so your team can focus on building a cohesive system. Integrate with Ogaraya in minutes, not months.</p>
-                    <a class="header-text-btn btn btn-lg mt-5" href="#">Explore the API <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <a class="header-text-btn btn btn-lg my-5" href="#">Explore the API <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
                     </a>
@@ -430,17 +432,17 @@
         </div>
     </footer>
     <!-- pop up -->
-    <!-- <div class="backdrop">
+    <div class="backdrop" id="dialog">
         <div class="dialog">
             <div class="d-flex justify-content-between align-items-center">
                 <img src="assets/img/Startup Check.png" width="50" alt="">
-                <span class="pop-close"> x </span>
+                <span class="pop-close" id="toggleform"> x </span>
             </div>
             <div class="pt-3 pb-4">
                 <h4>Get Started</h4>
             </div>
             <div class="px-4">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex">
                     <div class="pop-icon">
                         <img src="assets/img/Merchant.png" alt="">
                     </div>
@@ -449,13 +451,33 @@
                         <p>Text MERCHANT to 08107600076 to get an invitation code.</p>
                     </div>
                 </div>
-                <div class="row">
+                <form class="row">
                     <input type="text" placeholder="Type Code Here" class="p-2">
                     <button class="custom-btn-bg btn btn-lg col-12 my-4">Validate Code</button>
+                </form>
+            </div>
+            <div class="px-4">
+                <div class="d-flex">
+                    <div class="pop-icon">
+                        <img src="assets/img/Individual.png" alt="">
+                    </div>
+                    <div class="">
+                        <h6>For Individual</h6>
+                        <p>Pay bills and buy airtime with text</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pop-sm-icon">
+                    <img src="assets/img/Utility Bills.png" class="" height="20" width="20" alt=""><p>For bill payment text UTILITY to 08107600076 </p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/Vector(4).png" class="" height="20" width="20" alt=""><p>To buy airtime tMerchant.pngext Airtime to 08107600076  </p>
+                </div>
+                <div class="row">
+                    <button class="custom-btn-bg btn btn-lg col-12 my-4">Open Messages</button>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <script src="assets/js/index.js"></script>
 </body>
 </html>

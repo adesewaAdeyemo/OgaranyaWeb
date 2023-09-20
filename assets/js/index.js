@@ -31,17 +31,36 @@ function showflexdetail(formId) {
     clickedbtn.classList.add("custom-btn-bg");
   }
 }
+const delay = 1000;
 
-const collapse = document.getElementById("navbarText");
-const togglebtn = document.getElementById("open");
-const togleclose = document.getElementById("close");
-togglebtn.addEventListener("click", () => {
-  togglebtn.style.display = "none";
-  togleclose.style.display = "block";
-  collapse.style.display = "block";
-});
-togleclose.addEventListener("click", () => {
-  togleclose.style.display = "none";
-  togglebtn.style.display = "block";
-  collapse.style.display = "none";
+$(".content").hide();
+$("#dialog").hide();
+
+$(document).ready(function () {
+  setTimeout(function () {
+    $(".content").removeClass("hidden");
+    $(".content").slideDown(1000).fadeIn(10000);
+  }, delay);
+
+  $("#toggleform").click(function () {
+    $("#dialog").hide();
+  });
+
+  $(".togglestartform").click(function () {
+    $("#dialog").toggle();
+  });
+
+  $("#open").click(function () {
+    $(this).hide();
+    $("#close").show();
+    $("#navbarText").show();
+  });
+
+  $("#close").click(function () {
+    $(this).hide();
+    $("#open").show();
+    $("#navbarText").hide();
+  });
+
+
 });

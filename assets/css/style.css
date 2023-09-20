@@ -38,9 +38,16 @@ h6{
     font-weight: 100 !important;
     font-size: 30px;
 }
+.custom-bg{
+    background-color: #273765 !important;
+    color: #fff !important;
+}
 .custom-color{
     color: #273765 !important;
 }
+
+
+
 
 /* nav */
 nav a, .header ul li{
@@ -55,9 +62,9 @@ nav a.btn{
     white-space: nowrap !important; 
 }
 nav a.btn:hover, .header-text-btn:hover{
-    background-color: transparent !important;
+    background-color: transparent;
     color: #fff !important;
-    border: 1px solid #fff !important;
+    border: 1px solid #fff;
 }
 .navbar-toggler{
     position: absolute;
@@ -147,6 +154,10 @@ iframe{
     display: none;
     padding: 0 !important;
 }
+.showdetail, .showdetail h5{
+    cursor: pointer !important;
+}
+
 
 /* use  ogaranya for*/
 .spanbtn{
@@ -314,13 +325,13 @@ img.foot-icon{
 }
 .dialog {
   position: fixed;
-  top: 20vh;
+  top: 10vh;
   left: 35%;
-  width: 30%;
+  width: 27%;
   z-index: 100;
-  border-radius: 10px;
+  border-radius: 4px;
   border: none;
-  box-shadow: 0 2px 8px rgba(213, 215, 219, 0.26);
+  box-shadow: 0 2px 8px rgba(253, 254, 255, 0.1);
   padding: 20px;
   margin: 0;
   overflow: hidden;
@@ -331,9 +342,19 @@ img.foot-icon{
     color: #273765;
     font-size:  30px !important;
     line-height: 30px;
+    cursor: pointer;
 }
 .pop-icon{
     padding-right: 20px;
+}
+.pop-sm-icon img{
+    padding-right: 10px;
+    width: 20px;
+    height: 20px !important;
+}
+.dialog p{
+    color: #939596;
+    font-size: 15px;
 }
 
 /* medium screen */
@@ -371,13 +392,14 @@ h2{
 p{
     font-size: 16px;
 }
+
 /* nav */
 .navwrapper{
     max-width: 100% !important;
     padding: 0 !important;
 }
 nav a.btn{
-    min-width: 320px !important;
+    min-width: 450px !important;
     margin: 20px 0 10px 0;
 }
 .navbar-brand img{
@@ -396,7 +418,7 @@ nav a, .header ul li{
     color: #273765 !important;
 }
 nav a.btn{
-    min-width: 300px;
+    min-width: 350px !important;
     background-color: #F43722;
     color: #fff !important;
 }
@@ -541,10 +563,20 @@ img.foot-icon{
 .dialog {
   left: 10%;
   width: 80%;
+  top: 5vh;
 }
-/* .dialog h4{
-    font-size: ;
-} */
+.pop-close{
+    font-size:  20px !important;
+    line-height: 30px;
+    cursor: pointer;
+}
+.pop-icon{
+    padding-right: 10px;
+}
+.dialog p{
+    font-size: 13px;
+    line-height: 15px !important;
+}
 
 }
 
@@ -569,6 +601,14 @@ h2{
 ul li, a{
     font-size: 14px;
 }
+
+/* nav */
+nav a.btn{
+    min-width: 350px !important;
+    background-color: #F43722;
+    color: #fff !important;
+}
+
 
 /* header */
 .header-text-p{
