@@ -51,7 +51,8 @@ nav a.btn{
     color: #273765 !important;
     border-radius: 8px;
     font-size: 16px;
-   white-space: nowrap !important; 
+    margin-left: 12px;
+    white-space: nowrap !important; 
 }
 nav a.btn:hover, .header-text-btn:hover{
     background-color: transparent !important;
@@ -289,6 +290,9 @@ img.foot-icon{
 .footer-note{
     padding: 40px 0;
 }
+.footer-note p{
+    color: #88898a;
+}
 
 .close{
     display: none;
@@ -369,7 +373,8 @@ p{
     padding: 0 !important;
 }
 nav a.btn{
-    min-width: 200px;
+    min-width: 400px !important;
+    margin: 10px 0 0 0;
 }
 .navbar-brand img{
     width: 150px !important;
