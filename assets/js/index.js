@@ -31,6 +31,7 @@ function showflexdetail(formId) {
     clickedbtn.classList.add("custom-btn-bg");
   }
 }
+
 const collapse = document.getElementById("navbarText");
 const togglebtn = document.getElementById("open");
 const togleclose = document.getElementById("close");
