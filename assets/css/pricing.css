@@ -254,5 +254,8 @@ nav a.pricing-btn:hover{
     font-size: 34px !important;
     color: #273765;
 }
+.pricing-header{
+    padding: 60px 0 !important;
+}
 
 }
