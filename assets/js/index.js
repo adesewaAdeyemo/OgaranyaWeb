@@ -67,11 +67,12 @@ $(document).ready(function () {
     const inputValue = parseFloat($(this).val());
     if (!isNaN(inputValue)) {
       const deductedValue = inputValue - inputValue * 0.03;
-      $("#result").text(
-        deductedValue.toFixed(2)
-      );
+      const reconcileValue = inputValue - deductedValue;
+      
+      $("#result").text(deductedValue.toFixed(2));
+      $("#interest").text(reconcileValue.toFixed(2));
     } else {
-      $("#result").text("Please enter a valid number.");
+      $("#result").text("Invalid");
     }
   });
 

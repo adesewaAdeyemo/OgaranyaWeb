@@ -169,8 +169,7 @@ iframe{
     color:#273765;
     background-color: transparent;
     border: 1px solid #273765 !important;
-    margin: 1%;
-}
+?}
 .detail-text h5{
     color: #121316;
     font-weight: 600;
@@ -192,10 +191,11 @@ iframe{
 .card{
     border: none !important;
     outline: transparent;
-    box-shadow: -.1px .1px 1px #dedee2, -.16px .5px 2px #d5d9dd;
+    /* box-shadow: -.1px .1px 1px #dedee2, -.16px .5px 2px #d5d9dd; */
     padding: 80px 40px !important;
     background-color: #fff !important;
     border-radius: 20px !important;
+    box-shadow: 0px 0px 56px rgba(200, 200, 201, 0.2), 0px 0px 56px rgba(195, 196, 197, 0.2);
 }
 .usedetail{
     display: none;
@@ -329,6 +329,9 @@ img.foot-icon{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 10;
+}
+#dialog{
+    display: none;
 }
 .dialog {
   position: fixed;
@@ -464,6 +467,11 @@ h1.header-text{
     font-size: 36px;
     font-weight: 700;
 }
+.header-text-btn:hover{
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
 .header-hero{
     padding-bottom: 10rem;
 }
@@ -489,6 +497,7 @@ h1.header-text{
 /* use */
 .spanbtn, .use-text-btn{
     font-size: 9px !important;
+    margin: 5px 0 !important;
 }
 .use-text-btn{
     width: 50%;

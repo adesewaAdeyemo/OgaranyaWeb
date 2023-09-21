@@ -83,6 +83,10 @@ nav a.pricing-btn:hover{
     font-size: 36px;
     color: #273765;
 }
+#interest{
+    color: #273765;
+    font-weight: 300 !important;
+}
 .calc-input input{
     outline: none;
     border: transparent;
@@ -182,6 +186,17 @@ nav a.pricing-btn:hover{
     font-size: 14px !important;
 }
 
+
+.pricing-nav-bg .navbar-nav{
+    background-color: #273765;
+    color: #fff;
+    z-index: 999 !important;
+}
+.pricing-nav-bg .navbar-text ul li a{
+    color: #fff !important;
+}
+
+
 /* header */
 .pricing-header{
     padding: 80px 0 !important;
@@ -241,6 +256,7 @@ nav a.pricing-btn:hover{
 /* starttrial */
 .starttrial .learn{
     flex-direction: column !important;
+    padding-bottom: 20px;
 }
 
 
@@ -254,8 +270,15 @@ nav a.pricing-btn:hover{
     font-size: 34px !important;
     color: #273765;
 }
+
+/* header */
 .pricing-header{
     padding: 60px 0 !important;
+}
+
+/* payment */
+.payment{
+    padding: 30px 0 !important;
 }
 
 }
