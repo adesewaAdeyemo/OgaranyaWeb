@@ -636,7 +636,7 @@ ul li, a{
 
 /* nav */
 nav a.btn{
-    min-width: 350px !important;
+    min-width: 300px !important;
     background-color: #F43722;
     color: #fff !important;
 }
