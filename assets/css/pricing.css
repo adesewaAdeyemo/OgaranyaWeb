@@ -1,9 +1,15 @@
 .hidden{
     height: 180px;
 }
+.hiddden{
+    height: 110px;
+}
 .content{
     position: relative;
     top: 0px;
+}
+.p-btn{
+    box-shadow: -.1px .1px 1px #dedee2, -.16px .5px 2px #d5d9dd !important;
 }
 
 
@@ -29,7 +35,7 @@ nav a.pricing-btn:hover{
 .pricing-header{
     padding: 100px 0;
 }
-.pricing-header h1{
+.pricing-header h1, .payment h1{
     line-height: 92px;
     letter-spacing: 2px !important;
     font-weight: 500;
@@ -40,26 +46,208 @@ nav a.pricing-btn:hover{
     font-size: 15px;
 }
 
+/* payment */
+.bordercenter{
+    border-left: 1px solid rgba(239, 241, 245, 0.5);
+    border-right: 1px solid rgba(239, 241, 245, 0.5);
+}
+.payment{
+    padding: 60px 0;
+}
+.payment .col{
+    padding: 20px 40px;
+}
+.payment h1{
+    color: #fff !important;
+}
 
+/* calculator */
+.calculator{
+    padding: 60px 0;
+}
+.calculator h2{
+    padding-bottom: 20px !important;
+    color: #2d2f31;
+
+}
+.calc-input{
+    padding-left: 20px;
+    background-color: #F8F9FB;
+}
+.calc-input h5{
+    margin-top: 8px;
+    font-size: 36px;
+    color: #273765;
+}
+.spanplaceholder, #inputValue, #result{
+    font-size: 36px;
+    color: #273765;
+}
+.calc-input input{
+    outline: none;
+    border: transparent;
+    width: 100%;
+    font-size: 40px;
+    background-color: #F8F9FB;
+}
+.check{
+    padding-left: 5rem !important;
+}
+.fa-check{
+    color: #0FA190;
+}
+
+/* FAQ */
+.faq{
+    padding: 60px 0;
+}
+.threeOfFourWidth{
+    max-width: 70%;
+}
+.threeOfFourWidth h2 {
+    padding: 10px 0 !important;
+}
+.faq .row{
+    padding: 20px 0 !important;
+    margin: -12px !important;
+}
+.faq .row p{
+    font-size: 16px;
+}
+.faq .row h4{
+    font-size: 20px;
+}
+
+/* starttrial */
+.starttrial{
+    background-color: #D5DCF0;
+    color:#273765;
+}
+
+/* getintouch */
+.getintouch{
+    background-color: #F9FAFB;
+    padding: 40px;
+    border-radius: 16px;
+}
+.getintouch .btn{
+    color: #fff;
+    background-color: #273765;
+}
+.getintouch .btn:hover{
+    color: #273765;
+    background-color: transparent;
+    border: 1px solid #273765;
+}
+
+/* starttrial */
+.starttrial{
+    padding: 40px 0;
+}
+.starttrial .red-btn{
+    color: #fff;
+    background-color: #F43722;
+}
+.starttrial .red-btn:hover{
+    color: #c02110;
+    background-color: transparent;
+    border: 1px solid #F43722;
+}
+.starttrial .white-btn{
+    color: #273765;
+    background-color: #fff;
+    margin-right: 20px !important;
+}
+.starttrial .white-btn:hover{
+    color: #273765;
+    background-color: transparent;
+    border: 1px solid #273765;
+}
+.twoOfFourWidth{
+    max-width: 50% !important;
+}
 
 @media screen and (max-width: 768px) {
 .hidden{
     height: 100px !important;
 }
+.hiddden{
+    height: 60px;
+}
 .content{
     position: relative;
     top: 0px;
 }
+.btn{
+    font-size: 14px !important;
+}
 
-
+/* header */
 .pricing-header{
     padding: 80px 0 !important;
 }
-.pricing-header h1{
+.pricing-header h1, .payment h1{
     line-height: 50px;
     letter-spacing: 0px !important;
     font-weight: 300;
     font-size: 40px !important;
     color: #273765;
 }
+
+/* .payment */
+.bordercenter{
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid rgba(239, 241, 245, 0.5);
+    border-bottom: 1px solid rgba(239, 241, 245, 0.5); 
 }
+.payment .col{
+    padding: 30px 0;
+}
+
+/* calculator */
+.check{
+    padding: 40px 0 !important;
+}
+.calculator h2{
+    padding: 0;
+}
+
+/* faq */
+.threeOfFourWidth, .twoOfFourWidth{
+    max-width: 100% !important;
+    padding-bottom: 20px;
+}
+.threeOfFourWidth h2 {
+    padding: 5px 0 !important;
+}
+.faq{
+    padding: 0 ;
+}
+.faq .row{
+    padding: 0 !important;
+}
+.faq .row p{
+    font-size: 14px;
+}
+.faq .row h4{
+    font-size: 16px;
+}
+
+/* getintouch */
+.getintouch .d-flex{
+    flex-direction: column;
+}
+/* starttrial */
+.starttrial .learn{
+    flex-direction: column !important;
+}
+
+
+
+}
+/* @media screen and (max-width: 400px) {
+.calculator h2, .threeOfFourWidth h2{
+    font-size: 10px !important;
+}
+} */

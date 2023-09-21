@@ -39,6 +39,7 @@ $("#dialog").hide();
 $(document).ready(function () {
   setTimeout(function () {
     $(".content").removeClass("hidden");
+    $(".content").removeClass("hiddden");
     $(".content").slideDown(1000).fadeIn(10000);
   }, delay);
 
@@ -62,5 +63,16 @@ $(document).ready(function () {
     $("#navbarText").hide();
   });
 
+  $("#inputValue").on("input", function () {
+    const inputValue = parseFloat($(this).val());
+    if (!isNaN(inputValue)) {
+      const deductedValue = inputValue - inputValue * 0.03;
+      $("#result").text(
+        deductedValue.toFixed(2)
+      );
+    } else {
+      $("#result").text("Please enter a valid number.");
+    }
+  });
 
 });
