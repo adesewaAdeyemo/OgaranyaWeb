@@ -25,7 +25,7 @@ ul li, a{
 }
 .wrapper, .navwrapper{
     margin: 0 auto !important;
-    max-width: 70%;
+    width: 70% !important;
 }
 p{
     font-size: 18px;
@@ -53,7 +53,6 @@ h6{
 }
 
 
-
 /* nav */
 nav a, .header ul li{
     color: #fff !important;
@@ -79,6 +78,7 @@ nav a.btn:hover, .header-text-btn:hover{
 .navbar-collapse {
   flex-basis: 100% !important;
   flex-grow: 0 !important;
+  margin-right: -100px !important;
 }
 .navbar-toggler .icon{
     outline: none !important;
@@ -118,7 +118,7 @@ header, .nav-bg{
 }
 
 h1.header-text{
-    padding-top: 70px;
+    padding-top: 120px;
     font-size: 62px;
     font-weight: 700;
 }
@@ -169,7 +169,7 @@ iframe{
     color:#273765;
     background-color: transparent;
     border: 1px solid #273765 !important;
-?}
+}
 .detail-text h5{
     color: #121316;
     font-weight: 600;
@@ -273,7 +273,13 @@ iframe{
 .footer ul{
     padding: 0 !important;
 }
-
+.footer a{
+    font-size: 16px;
+    color: #2a2b2c;
+}
+.footer a:hover{
+    color: #4e10fa;
+}
 /* div.footer */
 .footer ul li{
     font-size: 16px;
@@ -383,46 +389,43 @@ img.foot-icon{
 }
 
 /* medium screen */
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
 .bill, .nav a.btn{
    white-space: nowrap !important; 
 }
 .space-right{
     padding:0 0 0 60px !important;
 }
-}
+} */
 @media screen and (max-width: 1200px) {
 .wrapper{
     margin: 0 auto !important;
-    max-width: 80%;
+    width: 80% !important;
+}
+
+.navbar-brand img{
+    width: 200px !important;
+}
+h1.header-text{
+    font-size: 42px;
+}
+h2{
+    font-size: 30px !important;
+}
+ul li, a{
+    font-size: 14px;
+}
+.spanbtn, .use-text-btn{
+    margin: 10px 0 !important;
 }
 
 }
 @media screen and (max-width: 1000px) {
 .wrapper{
-    margin: 0 auto !important;
     max-width: 90%;
 }
 
-}
-
-@media screen and (max-width: 768px) {
-/* General */
-.wrapper{
-    width: 95% !important;
-}
-h2{
-    font-size: 30px !important;
-}
-p{
-    font-size: 16px;
-}
-
 /* nav */
-.navwrapper{
-    max-width: 100% !important;
-    padding: 0 !important;
-}
 nav a.btn{
     min-width: 450px !important;
     margin: 20px 0 10px 0;
@@ -458,8 +461,35 @@ nav a.btn:hover, .header-text-btn:hover{
 .navbar-brand{
     margin-left: 20px;
 }
+.customer{
+    margin-top: -250px !important;
+}
+/* use */
+.spanbtn, .use-text-btn{
+    font-size: 9px !important;
+    margin: 5px 0 !important;
+}
+h2{
+    font-size: 30px !important;
+}
 
 
+
+}
+
+@media screen and (max-width: 768px) {
+/* General */
+.wrapper{
+    width: 95% !important;
+}
+h2{
+    font-size: 30px !important;
+}
+p{
+    font-size: 16px;
+}
+
+/* nav */
 
 /* header */
 h1.header-text{
@@ -621,7 +651,7 @@ img.foot-icon{
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 456px) {
 h1.header-text{
     font-size: 30px !important;
 }
@@ -685,6 +715,28 @@ header p, .header-text-btn{
 .customer{
     border-radius: 8px;
     padding: 20px;
+}
+
+}
+@media screen and (max-width: 300px) {
+nav a.btn{
+    min-width: 240px !important;
+}
+h1.header-text{
+    font-size: 24px !important;
+}
+h2{
+    font-size: 18px !important;
+}
+p{
+    font-size: 13px;
+
+}
+h5{
+    font-size: 15px !important;
+}
+.dev-frame img{
+    height: 250px !important;
 }
 
 }

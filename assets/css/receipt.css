@@ -1,0 +1,46 @@
+.receipt{
+    padding: 120px 0;
+}
+.receipt .btn{
+    background-color: #273765;
+    color: #fff;
+}
+.receipt .btn:hover{
+    background-color: transparent;
+    color: #273765;
+    border: 1px solid #273765;
+}
+.printer{
+    padding-right: 100px !important;
+}
+.receipt-card{
+    min-height: 600px;
+}
+.receipt-placeholder{
+    margin-top: 20%;
+    text-align: center;
+    color: #7c7d80;
+}
+input{
+    outline: #a3a5aa !important;
+}
+
+@media screen and (max-width: 768px) {
+.receipt{
+    padding: 70px 0;
+}
+.printer{
+    padding-right: 0 !important;
+    padding-bottom: 40px;
+}
+.receipt-card{
+    min-height: 400px;
+}
+.receipt-placeholder{
+    margin-top: 15%;
+    text-align: center;
+    color: #7c7d80;
+}
+
+
+}

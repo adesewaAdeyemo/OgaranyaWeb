@@ -33,7 +33,7 @@ nav a.pricing-btn:hover{
 
 /* header */
 .pricing-header{
-    padding: 100px 0;
+    padding: 120px 0;
 }
 .pricing-header h1, .payment h1{
     line-height: 92px;
@@ -190,7 +190,7 @@ nav a.pricing-btn:hover{
 .pricing-nav-bg .navbar-nav{
     background-color: #273765;
     color: #fff;
-    z-index: 999 !important;
+    z-index: 1 !important;
 }
 .pricing-nav-bg .navbar-text ul li a{
     color: #fff !important;
@@ -199,7 +199,7 @@ nav a.pricing-btn:hover{
 
 /* header */
 .pricing-header{
-    padding: 80px 0 !important;
+    padding: 70px 0 !important;
 }
 .pricing-header h1, .payment h1{
     line-height: 50px;
@@ -262,7 +262,7 @@ nav a.pricing-btn:hover{
 
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 456px) {
 .pricing-header h1, .payment h1{
     line-height: 45px;
     letter-spacing: 0px !important;

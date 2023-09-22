@@ -1,0 +1,44 @@
+.contact-us-header{
+    padding: 120px 0;
+}
+.contact-card .d-flex{
+    flex-direction: column;
+}
+.contact-card{
+    margin: 5px 0;
+}
+.card i{
+    padding-bottom: 10px;
+}
+.card{
+    padding: 30px 20px 10px 20px !important;
+}
+.contact-form input{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    border-radius: 4px !important;
+    outline: none !important;
+    border: .1px solid #c4c5c7 !important;
+}
+.contact-form .btn{
+    background-color: #273765;
+    color: #fff;
+}
+.contact-form .btn:hover{
+    background-color: transparent;
+    color: #273765;
+    border: 1px solid #273765;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-header{
+        padding: 70px 0;
+    }
+    .contact.d-flex{
+        flex-direction: column;
+    }
+    .contact-form{
+        margin-top: 30px;
+    }
+}
