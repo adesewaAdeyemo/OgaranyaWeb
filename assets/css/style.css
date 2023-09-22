@@ -440,7 +440,7 @@ nav a.btn{
     background-color: #fff;
     border-radius: 8px !important;
     position: absolute;
-    min-width: 100% !important;
+    /* min-width: 100% !important; */
 }
 nav a, .header ul li{
     color: #273765 !important;
