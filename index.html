@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ogaranya</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/pricing.css">
-    <link rel="stylesheet" href="../assets/css/receipt.css">
-    <link rel="stylesheet" href="../assets/css/integration.css">
-    <link rel="stylesheet" href="../assets/css/contact-us.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+    <link rel="stylesheet" href="assets/css/receipt.css">
+    <link rel="stylesheet" href="assets/css/integration.css">
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+    <link rel="stylesheet" href="assets/css/language.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -37,7 +38,10 @@
                     <ul class="">       
                     </ul>
                     <span class="navbar-text">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 darknav">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="resouces/pricing.html">Pricing</a>
                             </li>
@@ -51,7 +55,8 @@
                                 <a class="nav-link" href="">Documentation</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
+                                <div class="language" id="google_translate_element"></div>
+                                <!-- <div class="btn btn-md border-radius p-0  mx-3" id="google_translate_element"></div> -->
                             </li>
                             <li class="nav-item">
                                 <a class="togglestartform btn btn-lg" href="#">Get started</a>
@@ -178,7 +183,7 @@
             </div>
             <div class="usedetail" id="buy">
                 <div class="row py-5 d-flex align-items-center">
-                    <div class="col col-md-8 col-sm-12 card detail-text">
+                    <div class="col col-md-8 col-sm-12 card detail-text pb-4">
                         <h5>Buy</h5>
                         <p>Text "Buy 101010" to 08107600076 to buy a demo product.</p>
                         <a class="use-text-btn btn col-md-4" href="#">Try Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -193,7 +198,7 @@
             </div>
             <div class="usedetail" id="book">
                 <div class="usedetail row py-5 d-flex align-items-center">
-                    <div class="col col-md-8 col-sm-12 card detail-text">
+                    <div class="col col-md-8 col-sm-12 card detail-text pb-4">
                         <h5>Book</h5>
                         <p>Text "Book 101010" to 08107600076 to book an event.</p>
                         <a class="use-text-btn btn" href="#">Try Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -208,7 +213,7 @@
             </div>
             <div class="usedetail" id="give">
                 <div class="usedetail row py-5 d-flex align-items-center">
-                    <div class="col col-md-8 col-sm-12 card detail-text">
+                    <div class="col col-md-8 col-sm-12 card detail-text pb-4">
                         <h5>Give</h5>
                         <p>Text "Give 101010" to 08107600076 to give a daonation.</p>
                         <a class="use-text-btn btn col-md-4" href="#">Try Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -258,12 +263,10 @@
                     </a>
                 </div>
                 <div class="col dev-flex-text">
-                    <div class="dev-frame">
+                    <div class="dev-frame code">
                     <pre>
                     <code>       
-
     { 
-
         "status" : "success",
 
         "data" : { 
@@ -277,7 +280,6 @@
             08011223344", 
 
             "msisdn_to_send_to" : "08011223344" 
-
         }
     }
                     </code>
@@ -350,30 +352,46 @@
     <div class="wrapper customer text-center">
         <h6>Customers Stories</h6>
         <div class="change-story">
-            <h2>Ogaraya is absolutely fantastic. Setting up took less than 45 mins. Extremely easy </h2>
-            <div class="story-teller py-4">
-                <img src="assets/img/Avatar(1).png" alt="">
-                <h5>Layon Pan</h5>
-                <p>CTO, Sharply Africa</p>
-            </div>
-            <div class="row align-items-center">
-                <div class="col d-flex justify-content-around align-items-center height">
-                    <div class=" col-sm-4">
-                        <img src="assets/img/Link → kano1.jpg(1).png" alt="">
+
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h2>Ogaraya is absolutely fantastic. Setting up took less than 45 mins. Extremely easy </h2>
+                <div class="story-teller py-4">
+                    <img src="assets/img/Avatar(1).png" alt="">
+                    <h5>Layon Pan</h5>
+                    <p>CTO, Sharply Africa</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col d-flex justify-content-around align-items-center height">
+                        <div class=" col-sm-4">
+                            <img src="assets/img/Link → kano1.jpg(1).png" alt="">
+                        </div>
+                        <div class="col-md-3 col-sm-8">
+                            <img src="assets/img/neolife.svg" width="150" alt="">
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-8">
-                        <img src="assets/img/neolife.svg" width="150" alt="">
+                    <div class="col d-flex justify-content-around align-items-center height">
+                        <div class="col-md-4 col-sm-8">
+                            <img src="assets/img/small-fob-logo.png" alt="">
+                        </div>
+                        <div class=" col-sm-4">
+                            <img src="assets/img/image 14.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-around align-items-center height">
-                    <div class="col-md-4 col-sm-8">
-                        <img src="assets/img/small-fob-logo.png" alt="">
-                    </div>
-                    <div class=" col-sm-4">
-                        <img src="assets/img/image 14.png" alt="">
-                    </div>
-                </div>
             </div>
+            <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        </div>
+
+
         </div>
     </div>
     <!-- footer row -->
@@ -454,9 +472,9 @@
                         <div class="pop-icon">
                             <img src="assets/img/Merchant.png" alt="">
                         </div>
-                        <div class="">
+                        <div class="pop-send-text">
                             <h6>For Merchants</h6>
-                            <p>Text MERCHANT to 08107600076 to get an invitation code.</p>
+                            <p>Text <strong>MERCHANT</strong> to <strong>08107600076</strong> to get an invitation code.</p>
                         </div>
                     </div>
                     <form class="row">
@@ -474,11 +492,9 @@
                             <p>Pay bills and buy airtime with text</p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center pop-sm-icon">
-                        <img src="assets/img/Utility Bills.png" class="" height="20" width="20" alt=""><p>For bill payment text UTILITY to 08107600076 </p>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img src="assets/img/Vector(4).png" class="" height="20" width="20" alt=""><p>To buy airtime tMerchant.pngext Airtime to 08107600076  </p>
+                    <div class="">
+                        <p><i class="fa fa-clipboard pop-fa-icon" aria-hidden="true"></i>For bill payment text UTILITY to 08107600076 </p>
+                        <p><i class="fa fa-phone pop-fa-icon" aria-hidden="true"></i>To buy airtime tMerchant.pngext Airtime to 08107600076  </p>
                     </div>
                     <div class="row">
                         <button class="custom-btn-bg btn btn-lg col-12 my-4">Open Messages</button>
@@ -488,5 +504,19 @@
         </div>
     </div>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+
+
+<!-- google manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNTJDBRT4L"></script>
+
+<!-- cookie -->
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/8a151c484db42cd1ad8e027364d33e3c.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LdRaywfAAAAAJBnKYIBc9Prv5nm2hX9izKlvUcE"></script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>

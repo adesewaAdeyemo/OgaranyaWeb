@@ -585,7 +585,7 @@ h1.header-text{
     </script>
 </body>
 </html> -->
-.offline{
+<!-- .offline{
     padding: 120px 0;
 }
 img.offline-sm-img{
@@ -632,4 +632,86 @@ img.offline-sm-img{
         font-size: 12px;
     }
 
-}
+} -->
+
+
+	<script>
+		const toggle = document.querySelector(".toggle");
+		const menu = document.querySelector(".menu");
+		const items = document.querySelectorAll(".item");
+              
+
+
+		/* Toggle mobile menu */
+		function toggleMenu() {
+			if (menu.classList.contains("active")) {
+				menu.classList.remove("active");
+				toggle.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+			} else {
+				menu.classList.add("active");
+				toggle.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+			}
+		}
+
+		/* Activate Submenu */
+		function toggleItem() {
+			if (this.classList.contains("submenu-active")) {
+				this.classList.remove("submenu-active");
+			} else if (menu.querySelector(".submenu-active")) {
+				menu.querySelector(".submenu-active").classList.remove("submenu-active");
+				this.classList.add("submenu-active");
+			} else {
+				this.classList.add("submenu-active");
+			}
+		}
+
+		/* Close Submenu From Anywhere */
+		function closeSubmenu(e) {
+			let isClickInside = menu.contains(e.target);
+
+			if (!isClickInside && menu.querySelector(".submenu-active")) {
+				menu.querySelector(".submenu-active").classList.remove("submenu-active");
+			}
+		}
+		/* Event Listeners */
+		toggle.addEventListener("click", toggleMenu, false);
+		for (let item of items) {
+			if (item.querySelector(".submenu")) {
+				item.addEventListener("click", toggleItem, false);
+			}
+			item.addEventListener("keypress", toggleItem, false);
+		}
+		document.addEventListener("click", closeSubmenu, false);
+
+		//document.addEventListener('contextmenu', event => event.preventDefault());
+	</script> 
+
+
+
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60ba4643de99a4282a1b6c5b/1f7bq4v0d';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('.close.contact').click(function(){
+ localStorage.setItem("isContact", 1); 
+a = new Date(new Date().getTime() +1000*60*60*24*365);
+document.cookie = 'contact="ogaranya"; expires='+a.toGMTString()+';'; 
+})
+
+});
+</script>

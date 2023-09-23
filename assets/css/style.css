@@ -158,7 +158,10 @@ iframe{
 .detail{
     display: none;
     padding: 0 !important;
-}
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
 .showdetail, .showdetail h5{
     cursor: pointer !important;
 }
@@ -352,6 +355,8 @@ img.foot-icon{
   margin: 0;
   overflow: hidden;
   background-color: rgb(255, 255, 255) !important;
+  max-height: 80vh;
+  overflow-y: scroll !important;
 }
 .dialog-text{
   margin-top: -90px;
@@ -379,15 +384,17 @@ img.foot-icon{
 .pop-icon{
     padding-right: 20px;
 }
-.pop-sm-icon img{
+.pop-fa-icon{
     padding-right: 10px;
-    width: 20px;
-    height: 20px !important;
 }
 .dialog p{
     color: #939596;
-    font-size: 15px;
+    font-size: 16px;
 }
+strong{
+    color: #273765 !important;
+    font-weight: 400 !important;
+} 
 
 /* medium screen */
 /* @media screen and (min-width: 1400px) {
